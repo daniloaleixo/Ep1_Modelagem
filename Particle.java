@@ -5,7 +5,6 @@
  * <http://www.opensourcephysics.org/>
  */
 
-package org.opensourcephysics.sip.ch02;
 
 /**
  * Particle models a one-dimensional trajectory that can be computed analytically and numerically.

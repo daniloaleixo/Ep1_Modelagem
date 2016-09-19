@@ -24,7 +24,7 @@ if(len(sys.argv) < 4):
 	exit(0)
 else:
 	tipo = sys.argv[1]
-	t2 = float(sys.argv[2])
+	t1 = float(sys.argv[2])
 	t2 = float(sys.argv[3])
 	t3 = float(sys.argv[4])
 
@@ -45,7 +45,8 @@ def calc_velocidade():
 aceleracao_media = calc_aceleracao()   
 velocidade_media = calc_velocidade()
 
-print aceleracao_media, velocidade_media, tempo_Total
+print "\n\nAceleracao media " + str(aceleracao_media) + "\nVelocidade Media "  + str(velocidade_media)
+print "Tempo total " + str(tempo_Total) + "\n"
 
 
 # --------------------------------------------------------
@@ -160,6 +161,7 @@ def main():
 		ye,ve = movimentoUniformeEuler(y0, v0, tf, step)
 
 		printV(ya, ye,'ya | ye',printStep)
+		print ''
 		printV(va , ve,'va | ve',printStep)
 	elif tipo == '2':
 
@@ -171,6 +173,7 @@ def main():
 		ye,ve = movimentoUnifAceleradoEuler(y0, v0, tf, step)
 
 		printV(ya, ye,'ya | ye',printStep)
+		print ''
 		printV(va , ve,'va | ve',printStep)
 
 

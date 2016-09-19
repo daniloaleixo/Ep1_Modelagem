@@ -16,9 +16,9 @@ tipo = 0
 # entra com os argumentos da funcao
 if(len(sys.argv) < 4):
 	print "modo de uso\n"
-	print "ep1 <tempos de medicao>"
-	print "Ex: $ ep1 tipo 4.5 5.6 7.8\n"
-	print "Onde tipo e definido por:\n"
+	print "ep1.py <tipo de movimento> <tempos de medicao>"
+	print "Ex: $ ep1.py tipo 4.5 5.6 7.8\n"
+	print "Onde tipo o tipo de movimento eh definido por:\n"
 	print "  1 = Movimento Retilineo Uniforme\n"
 	print "  2 = Movimento Uniormemente acelerado\n"
 	exit(0)
